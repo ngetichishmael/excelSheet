@@ -1,0 +1,5 @@
+
+wb = load_workbook('data.xlsx')
+ws = wb['Table 3']
+for row in range(4, 26):
+    print(ws['H' + str(row)].value)
